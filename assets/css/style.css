@@ -154,7 +154,10 @@ body {
 .service-area .card {
     border: 2px solid white;
     margin-top: 15px;
-    height: 400px;
+    height: 420px;
+    padding-bottom: 10px!important;
+
+
 }
 
 
@@ -214,8 +217,57 @@ body {
     border-radius: 0;
 }
 
+
 /*------- Contact Area End --------*/
 
+/*-------  My project area start  --------*/
+
+.projects-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #0C0C0C;
+}
+
+.projects-area .heading {
+    border-bottom: 1px solid #83C2FE;
+    margin-bottom: 10px;
+}
+.projects-area .card{
+    overflow: hidden;
+}
+
+.projects-area .card .p-thumbnail{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  
+
+}
+.projects-area .card .p-thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.projects-area .card:hover .p-thumbnail img{
+    transform: scale(1.2);
+    transition: .7s;
+}
+.projects-area .card .card-body .bi-eye{
+    font-size: 22px;
+}
+.projects-area .card .card-body p{
+    margin-top: 10px;
+    font-size: 16px;
+
+}
+
+
+
+
+/*-------  My project area End  --------*/
+
+   
 
 /*------- Footer Area Start --------*/
 footer {
@@ -260,3 +312,96 @@ footer .copyright {
 
 
 /*------- Footer Area End --------*/
+
+
+/*-------------Preloader Start-------------*/
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: white;
+
+}
+
+.preloader .spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+.double-bounce1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: red;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: pink;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+
+    0%,
+    100% {
+        -webkit-transform: scale(0.0)
+    }
+
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bounce {
+
+    0%,
+    100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+/*----------------Preloader End-------------*/
+
+

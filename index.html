@@ -18,6 +18,16 @@
 
 <body>
 
+    <!-- --------Preloader Start-------->
+    <div class="preloader" id="preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <!--------- Preloader End ---------->
+
+
     <!-- Navigation Start -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
@@ -34,6 +44,7 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                      
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about-area">About</a>
@@ -50,6 +61,8 @@
                     <li class="nav-item">
                         <a class="nav-link btn btn-outline-info" href="#" id="contactBtn">Contact Me</a>
                     </li>
+                    
+
                 </ul>
             </div>
         </div>
@@ -107,7 +120,7 @@
 
 
     <!-- Service area Start -->
-    <div class="service-area" id="service">
+    <div class="service-area " id="service">
         <div class="container">
             <div class="heading">
                 <h2 class="text-white">Services</h2>
@@ -120,7 +133,7 @@
                                 <span><i class="bi bi-code-slash"></i></span>
                             </div>
                             <h4 class="card-title fw-bold pt-2 pb-2">Web Design</h4>
-                            <p class="card-text">I've been in the field of web design for a while now, with expertise in Webflow and a solid understanding of HTML, CSS, and JS. My experience includes working on web design projects and brand-related initiatives within internal design teams. I have a growth mindset and a strong eagerness to learn and explore new ideas and technologies.</p>
+                            <p class="card-text">I've been in the field of web design for a while now, with expertise in Webflow and a solid understanding of    HTML, CSS, and JS. My experience includes working on web design projects and brand-related initiatives within internal design teams. I have a growth mindset and a strong eagerness to learn and explore new ideas and technologies.</p>
                             <div class="pt-2 pb-2">
                                 <a href="#" class="btn btn-info">View Details</a>
                             </div>
@@ -249,6 +262,58 @@
     </div>
     <!-- Skill area End -->
 
+    <!-- My project area start -->
+
+<div class="projects-area">
+    <div class="container">
+        <div class="heading">
+            <h2 class="text-white">My Projects</h2>
+            
+        </div>
+        <div class="row g-3 mt-3">
+            <!--single-->
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="card ">
+                        <div class="p-thumbnail">
+                            <img src="assets/images/project/ecommerce.png" alt="">
+                        </div>
+                       <div class="card-body p-4">
+                            <div class="d-flex justify-content-between mt-3">
+                            <div>
+                                <h6>My-Ecommerce</h6>
+
+                            </div>
+                            <div>
+                                <a href="https://marium-mahjabin.github.io/E-commerce/" target="_blank">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-details">
+                            <p>
+                                <i class="bi bi-pen-fill"></i>
+                                HTML5,CSS3,Bootstrap5,JavaScript and others.
+                            </p>
+                        </div>
+                       </div>
+                        
+                    </div>
+                    
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <!-- My project area End -->
+
+
 
     <!-- Contact area Start -->
     <div class="contact-area" id="contact">
@@ -312,6 +377,14 @@
     </div>
     <!-- Contact area End -->
 
+  
+    <!-- ===========Preloader Start=========== -->
+    <script>
+        setTimeout(() => {
+            document.getElementById('preloader').style.display = "none"
+        }, 2500)
+    </script>
+    <!-- ===========Preloader End=========== -->
 
     <!-- Footer Start -->
     <footer>
